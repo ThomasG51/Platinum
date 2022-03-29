@@ -15,6 +15,7 @@
 		7E30EBE927EF3BAC0061F2FB /* Platinum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E30EBE727EF3BAC0061F2FB /* Platinum.xcdatamodeld */; };
 		7E6606C127F2EFC80081814B /* TrophyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6606C027F2EFC80081814B /* TrophyListView.swift */; };
 		7E6606C327F2F8F20081814B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6606C227F2F8F20081814B /* Constant.swift */; };
+		7E6606C527F32C6C0081814B /* TrophyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6606C427F32C6B0081814B /* TrophyCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		7E30EBE827EF3BAC0061F2FB /* Platinum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Platinum.xcdatamodel; sourceTree = "<group>"; };
 		7E6606C027F2EFC80081814B /* TrophyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyListView.swift; sourceTree = "<group>"; };
 		7E6606C227F2F8F20081814B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		7E6606C427F32C6B0081814B /* TrophyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				7E30EBDE27EF3BAB0061F2FB /* ContentView.swift */,
 				7E6606C027F2EFC80081814B /* TrophyListView.swift */,
+				7E6606C427F32C6B0081814B /* TrophyCollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E30EBE627EF3BAC0061F2FB /* Persistence.swift in Sources */,
+				7E6606C527F32C6C0081814B /* TrophyCollectionView.swift in Sources */,
 				7E6606C127F2EFC80081814B /* TrophyListView.swift in Sources */,
 				7E30EBDF27EF3BAB0061F2FB /* ContentView.swift in Sources */,
 				7E30EBDD27EF3BAB0061F2FB /* PlatinumApp.swift in Sources */,

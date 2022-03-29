@@ -30,7 +30,7 @@ struct ContentView: View {
                 if isListMode {
                     TrophyListView()
                 } else {
-                    Text("Grid")
+                    TrophyCollectionView()
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
