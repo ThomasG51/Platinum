@@ -40,7 +40,7 @@ struct ContentView: View {
                         isListMode.toggle()
                     }, label: {
                         Image(systemName: isListMode ? "rectangle.grid.2x2" : "rectangle.grid.1x2")
-                            .foregroundColor(.blue)
+                            .foregroundColor(Color("ps-blue"))
                     })
                 }
                 
@@ -53,7 +53,7 @@ struct ContentView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Image(systemName: "plus")
-                        .foregroundColor(.green)
+                        .foregroundColor(Color("ps-green"))
                 }
             }
         }

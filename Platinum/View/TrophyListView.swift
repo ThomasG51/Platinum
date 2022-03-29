@@ -28,7 +28,7 @@ struct TrophyListView: View {
             ForEach(consoles.allCases, id: \.self) { console in
                 Section {
                     VStack(alignment: .leading) {
-                        LinearGradient(colors: [.blue, .green], startPoint: .leading, endPoint: .trailing)
+                        LinearGradient(colors: [Color("ps-blue"), Color("ps-green")], startPoint: .leading, endPoint: .trailing)
                             .mask {
                                 HStack {
                                     Text(console.rawValue)
