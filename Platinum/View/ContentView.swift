@@ -9,8 +9,54 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    
+    // MARK: - PROPERTY
+    
+    
+    
+    // MARK: - VIEWMODEL
+    
+    
+    
+    // MARK: - STATE / BINDING
+    @State private var isListMode = true
+    
+    
+    // MARK: - VIEW BODY
+    
     var body: some View {
-        Text("Swift")
+        NavigationView {
+            Group {
+                if isListMode {
+                    TrophyListView()
+                } else {
+                    Text("Grid")
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        isListMode.toggle()
+                    }, label: {
+                        Image(systemName: isListMode ? "rectangle.grid.2x2" : "rectangle.grid.1x2")
+                            .foregroundColor(.blue)
+                    })
+                }
+                
+                ToolbarItem(placement: .principal) {
+                    Image("logo")
+                        .resizable()
+                        .scaledToFit()
+                        .padding(6)
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Image(systemName: "plus")
+                        .foregroundColor(.green)
+                }
+            }
+        }
     }
 }
 
