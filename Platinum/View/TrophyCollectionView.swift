@@ -19,7 +19,7 @@ struct TrophyCollectionView: View {
     
     // MARK: - STATE / BINDING
     
-    
+    @State private var isShowingTrophyDetail = false
     
     // MARK: - VIEW BODY
     
@@ -32,6 +32,12 @@ struct TrophyCollectionView: View {
                         .scaledToFit()
                         .cornerRadius(10)
                         .padding(.bottom, 30)
+                        .onTapGesture {
+                            isShowingTrophyDetail = true
+                        }
+                        .sheet(isPresented: $isShowingTrophyDetail) {
+                            TrophyDetailView(trophy: "sample_trophy_1")
+                        }
                 }
             }
             .padding(.top, 50)
