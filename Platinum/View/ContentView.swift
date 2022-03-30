@@ -12,15 +12,15 @@ struct ContentView: View {
     
     // MARK: - PROPERTY
     
-    
+    let haptic = UIImpactFeedbackGenerator()
     
     // MARK: - VIEWMODEL
     
     
     
     // MARK: - STATE / BINDING
-    @State private var isListMode = true
     
+    @State private var isListMode = true
     
     // MARK: - VIEW BODY
     
@@ -38,6 +38,7 @@ struct ContentView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
                         isListMode.toggle()
+                        haptic.impactOccurred()
                     }, label: {
                         Image(systemName: isListMode ? "rectangle.grid.2x2" : "rectangle.grid.1x2")
                             .foregroundColor(Color("ps-blue"))
